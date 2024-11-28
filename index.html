@@ -11,101 +11,192 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row d-flex p-3 bg-light align-items-center justify-content-start">
-            <div class="col-10 d-flex align-items-center">
-                <i class="fa-brands fa-instagram fs-4 pe-1 pb-1"></i>
-                <h3 class="header">Instagram</h3>
-            </div>
-            <div class="col-2 d-flex justify-content-end">
-                <button class="btn btn-success">
-                    Create a new post
-                </button>
-                <div class="dropdown ms-1">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
+        <nav>
+            <div class="row d-flex p-3 bg-light align-items-center justify-content-start">
+                <div class="col-10 d-flex align-items-center">
+                    <i class="fa-brands fa-instagram fs-4 pe-1 pb-1"></i>
+                    <a class="navbar-brand text-dark" href="#"><h3>Instagram</h3></a>
+                </div>
+                <div class="col-2 d-flex justify-content-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Create a new post
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                  </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <label class="row" for="captions" style="color: black;"><strong>Captions:</strong></label>
+                                        <textarea id="captions" name="captions" rows="4" cols="60" placeholder="Escribe tus comentarios aquí..."></textarea>
+                                    </form>
+                                    <div class="content-fluid">
+                                        <button type="button" class="btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
+                                        <button type="button" class="btn btn-light border"><i class="fa-solid fa-camera"></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown ms-1">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
         <div class="container">
-            <div class="row justify-content-center m-3">
+            <div class="row justify-content-center mb-2">
                 <div class="col-2">
-                    <button class="btn">
+                    <button class="btn bg-light">
                         <i class="fa-solid fa-table-cells"></i>
                     </button>
-                    <button class="btn">
+                    <button class="btn bg-light">
                         <i class="fa-regular fa-square"></i>
                     </button>
                 </div>  
             </div>
-            <div class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+            <div id="distributionRule" class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3 d-none">
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811773628/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img1">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img2">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811855347/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img3">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img4">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812009601/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img5">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img6">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812062498/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img7">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812095131/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img8">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img9">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img10">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812127396/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img11">
                 </div>
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
                     class="img-fluid"
-                    alt="">
+                    alt="img12">
                 </div>
+            </div>
+            <div id="distributionRule2" class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811773628/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img1">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img2">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811855347/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img3">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img4">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812009601/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img5">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img6">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812062498/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img7">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812095131/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img8">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img9">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img10">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812127396/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img11">
+                </div>
+                <div class="col">
+                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
+                    class="img-fluid"
+                    alt="img12">
+                </div>
+            </div>
         </div>
     </div>
     
@@ -120,5 +211,6 @@
     crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/c74477b163.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
