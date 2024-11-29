@@ -7,6 +7,7 @@
     rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Instagram con Bootstrap 5</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                                 <div class="modal-body">
                                     <form>
                                         <label class="row" for="captions" style="color: black;"><strong>Captions:</strong></label>
-                                        <textarea id="captions" name="captions" rows="4" cols="60" placeholder="Escribe tus comentarios aquí..."></textarea>
+                                        <textarea id="captions" name="captions" rows="4" cols="55" placeholder="Escribe tus comentarios aquí..."></textarea>
                                     </form>
                                     <div class="content-fluid">
                                         <button type="button" class="btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
@@ -65,15 +66,15 @@
         <div class="container">
             <div class="row justify-content-center mb-2">
                 <div class="col-2">
-                    <button class="btn bg-light">
+                    <button id="buttonCuadricula" class="btn bg-light">
                         <i class="fa-solid fa-table-cells"></i>
                     </button>
-                    <button class="btn bg-light">
+                    <button id="buttonIndividual" class="btn bg-light">
                         <i class="fa-regular fa-square"></i>
                     </button>
                 </div>  
             </div>
-            <div id="distributionRule" class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3 d-none">
+            <div id="distributionRule1" class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
                 <div class="col">
                     <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811773628/sample_0.jpg" 
                     class="img-fluid"
@@ -135,66 +136,174 @@
                     alt="img12">
                 </div>
             </div>
-            <div id="distributionRule2" class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811773628/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img1">
+            <div id="distributionRule2" class="d-none">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811773628/sample_0.jpg" 
+                        alt="img1">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img2">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
+                        alt="img2">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811855347/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img3">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811855347/sample_0.jpg" 
+                        alt="img3">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img4">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
+                        alt="img4">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812009601/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img5">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812009601/sample_0.jpg" 
+                        alt="img5">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img6">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
+                        alt="img6">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812062498/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img7">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812062498/sample_0.jpg" 
+                        alt="img7">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812095131/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img8">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812095131/sample_0.jpg" 
+                        alt="img8">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img9">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812028271/sample_0.jpg" 
+                        alt="img9">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img10">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811887647/sample_0.jpg" 
+                        alt="img10">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812127396/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img11">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732812127396/sample_0.jpg" 
+                        alt="img11">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
-                    class="img-fluid"
-                    alt="img12">
+                <div class="post">
+                    <div class="post-header">
+                        <span class="textHeader"><p>Hello!!</p></span>
+                        <span class="numberHeader"><p>10/15</p></span>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://cdn-desktop-ap-media.osp.opera.software/images/c285b325-ada4-11ef-8491-a1decd3512a8/1732811809798/sample_0.jpg" 
+                        alt="img12">
+                    </div>
+                    <div class="post-body">
+                        <h5><strong>Likes 200</strong></h5>
+                        <p>BLA BLA BLA BLA BLA</p>
+                    </div>
                 </div>
             </div>
         </div>
